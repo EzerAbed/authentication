@@ -16,6 +16,8 @@ import { Input } from "../ui/input"
 import * as z from "zod"
 import { LoginSchema } from "@/schemas"
 import { Button } from "../ui/button"
+import { FormError } from "../form-error"
+import { FormSuccess } from "../form-success"
 
 
 
@@ -79,6 +81,9 @@ export const LoginForm = () => {
                             ))}
                         />
                     </div>
+
+                    <FormError message=""/>
+                    <FormSuccess message=""/>
 
                     <Button
                         type="submit"
